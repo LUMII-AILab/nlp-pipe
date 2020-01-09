@@ -1,2 +1,0 @@
-kombu==4.3.0
-librabbitmq==2.0

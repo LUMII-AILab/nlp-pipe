@@ -77,7 +77,6 @@ class Worker:
             if message.properties.get('reply_to'):
                 logger.info("Reply to {}".format(message.properties.get('reply_to')))
                 headers = message.headers
-                headers['']
                 self.producer.publish(
                     body,
                     headers=message.headers,

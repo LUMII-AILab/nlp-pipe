@@ -57,6 +57,18 @@ def process_document():
         return json_resp(exception=e)
 
 
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+    print('catch_all', path)
+    if 'api/' in path:
+        abort(404)
+    filename = os.path.join(UI_STATIC_DIR, path)
+    if not os.path.isfile(filename):
+        filename = os.path.join(UI_STATIC_DIR, 'index.html')
+    return send_file(filename)
+
+
 if __name__ == '__main__':
     logging.basicConfig(format='%(asctime)s: %(levelname)s : %(name)s  : %(message)s', level=logging.DEBUG)
 

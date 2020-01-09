@@ -1,5 +1,0 @@
-kombu==4.3.0
-flask==1.0.2
-flask-cors==3.0.7
-gunicorn==19.9.0
-python-dotenv==0.10.1
