@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/artursz/barchybrid-parser:lvtb2.3_spos_v3
+FROM registry.gitlab.com/ailab/lv-ud-barchybrid:1.0
 
 RUN pip install nlppipe==0.1.0
 

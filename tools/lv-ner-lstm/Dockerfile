@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/artursz/aznlp:0.1-lv_ner_sembank0.4
+FROM registry.gitlab.com/ailab/lv-ner-lstm:1.0
 
 RUN pip install nlppipe==0.1.0
 
