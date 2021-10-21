@@ -1,4 +1,4 @@
-# NLP-PIPE - Latvian NLP Pipeline as a Service
+# NLP-PIPE: Latvian NLP Pipeline as a Service
 
 ## Publications
 
