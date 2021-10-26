@@ -1,0 +1,55 @@
+@import '~antd/dist/antd.css';
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.demo-container {
+  position: relative;
+  padding: 1em;
+}
+
+table.conll th, td {
+  padding: 0 5px 0 5px;
+  border: 1px solid #ddd;
+}
+table.conll tr:hover {
+  background-color: #f5f5f5;
+}
+
+
+.ner-text {
+  line-height: 1.8em;
+  font-size: 1.1em;
+  color: #000;
+}
+
+.ner-text .sentence { margin-bottom: 15px; }
+
+span.ner {
+  padding: 3px 5px;
+  background: #e4e7d2;
+  border-radius: 0.3em;
+}
+
+span.ner:after {
+  content: attr(data-entity);
+  margin-left: 1px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 0.8em;
+  border-radius: 0.3em;
+  padding: 1px;
+
+}
+
+span.ner.organization { background: #bfeeb7; }
+span.ner.product { background: #9ef5ff; }
+span.ner.GPE { background: #feca74; }
+span.ner.location { background: #ff9561; }
+span.ner.person { background: #aa9cfc; }
+span.ner.event { background: #ffeb80; }
+span.ner.date { background: #bfe1d9; }
+span.ner.time { background: #bfe1d9; }
