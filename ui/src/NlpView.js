@@ -3,9 +3,9 @@ import {Button, Input, Radio, Card, Select, Spin} from 'antd';
 import {run_nlp} from './api';
 
 let sampleTexts = [
-    [
-        'Lielbritānijas \'British Steel\' vēlas iegādāties visu \'KVV Liepājas metalurgu\' | LETA',
-`Lielbritānijas uzņēmuma "British Steel" vadīts konsorcijs atkārtoti paudis vēlmi iegādāties visu maksātnespējīgās AS "KVV Liepājas metalurgs" mantu kopumā, liecina aģentūras LETA rīcībā esoša "British Steel" vēstule.
+  [
+    'Lielbritānijas \'British Steel\' vēlas iegādāties visu \'KVV Liepājas metalurgu\' | LETA',
+    `Lielbritānijas uzņēmuma "British Steel" vadīts konsorcijs atkārtoti paudis vēlmi iegādāties visu maksātnespējīgās AS "KVV Liepājas metalurgs" mantu kopumā, liecina aģentūras LETA rīcībā esoša "British Steel" vēstule.
 Konsorcijs, kurā ietilpst Lielbritānijas uzņēmumi "British Steel", "Greybull Capital" un Igaunijas uzņēmums "Baltic Metal Holding" 17. aprīlī vēstulē "KVV Liepājas metalurga" administratorei Vitai Dikai, Privatizācijas aģentūras meitasuzņēmuma "FeLM" valdes loceklim Jānim Rībenam un bankai "Citadele" apliecinājis savu ieinteresētību iegādāties visus maksātnespējīgā uzņēmuma aktīvus kopumā.
 Aģentūras LETA rīcībā esoša informācija liecina, ka "British Steel" konsorcijs vēlmi iegādāties visu uzņēmumu kopumā ir paudis arī šā gada februārī, nosūtot vēstuli atbildīgajām personām. Februārī "British Steel" norādīja, ka ražošanas atjaunošanai būtu nepieciešams nomainīt novecojušo velmētavas iekārtu un informēja, ka būtu gatavi investēt 60 līdz 75 miljonus eiro velmētavas iekārtu nomaiņā.
 Vēstulē teikts, ka "British Steel" konsorcijs ir gatavs parakstīt nodomu protokolu ar pašreizējiem "KVV Liepājas metalurga" īpašniekiem par uzņēmuma aktīvu iegādi.
@@ -19,18 +19,18 @@ Savukārt 28. martā "KVV Liepājas metalurga" elektrotēraudkausēšanas ceha u
 Marta beigās noslēdzās divu "KVV Liepājas metalurgs" nekustamo īpašumu izsoles. Īpašums Brīvības ielā 100B ir nosolīts par 82 000 eiro, bet īpašums Brīvības ielā 94A nosolīts par 116 000 eiro.
 Tāpat ir izsludinātas dažādu "KVV Liepājas metalurga" nekustamo īpašumu izsoles, kurām jānoslēdzas 20.aprīlī. Kopumā izsludinātas 11 izsoles, un tajās izsolāmo nekustamo īpašumu kopējā sākumcena ir 1,745 miljoni eiro.
 "KVV Liepājas metalurgs" par maksātnespējīgu tika pasludināts 2016. gada septembrī.`
-    ],
-    [
-        '\'Lidl\' lielā slepenībā apstiprina ienākšanu Latvijā | DELFI',
-`Veikals "Lidl" oficiāli apstiprinājis ienākšanu Latvijā, pērk zemesgabalus un meklē darbiniekus, taču konkrētus plānus glabā lielā slepenībā. Portāls "Delfi" noskaidroja, ka līdztekus vairākiem veikaliem Rīgā "Lidl" noskatījis arī Liepāju un Jūrmalu.
+  ],
+  [
+    '\'Lidl\' lielā slepenībā apstiprina ienākšanu Latvijā | DELFI',
+    `Veikals "Lidl" oficiāli apstiprinājis ienākšanu Latvijā, pērk zemesgabalus un meklē darbiniekus, taču konkrētus plānus glabā lielā slepenībā. Portāls "Delfi" noskaidroja, ka līdztekus vairākiem veikaliem Rīgā "Lidl" noskatījis arī Liepāju un Jūrmalu.
 Lietuvas uzņēmuma "Lidl Lietuva" korporatīvo attiecību un komunikācijas vadītājs Valds Lopeta, kurš vienlaikus pārstāv veikalu "Lidl" visā Baltijā, portālam "Delfi" apstiprina, ka uzņēmums ienāks Latvijā.
 "Mēs plānojam ienākt Latvijas tirgū. Pieņemam un vēlamies nodrošināt, ka vietējā ekonomika, piegādātāji un patērētāji iegūs no mūsu ienākšanas. Šobrīd "Lidl" pēta potenciālās veikalu atrašanās vietas Latvijā. Taču šobrīd ir pāragri spriest par konkrētiem plāniem," portālam "Delfi" pauž Lopeta. Viņš atteicās precizēt, kad pirmie "Lidl" veikali varētu vērt durvis.
 Konkretizēt "Lidl" plānus atteicās arī par veikala ienākšanu Latvijā atbildīgās SIA "MMS Property Solutions" valdes priekšsēdētājs Mārtiņš Sprūdžs. "Šī informācija ir konfidenciāla. Ņemot vērā sīvo konkurenci Latvijā, šo informāciju nav nepieciešams sniegt publiski, lai to kāds neizmantotu. Tas nav nekas vairāk kā biznesa specifika. Sevišķi pašā sākumā šādu informāciju nesniegsim. Kad paies noteikts laiks un tiks atvērti pirmie veikali, tad varbūt. Bet, kamēr tas nav noticis, šādu informāciju neviens neizpaudīs," portālam "Delfi" stāsta Sprūdžs, kurš "Lidl" pirmo mēģinājumu ienākt Latvijā laikā vadīja SIA "Lidl Latvija" nekustamā īpašuma departamentu.
 "Lidl" Somijas meitasuzņēmuma vadītājs Lauri Siponens pērn septembrī somu medijiem pauda, ka veikals Latvijā un Igaunijā varētu ienākt nākamajā desmitgadē, proti, ne ātrāk par 2020. gadu.`
-    ],
-    [
-        'Gaidot \'Phjončhanu 2018\': Kanādas olimpiskā hokeja izlase ceļu pēc zelta sāk Latvijā | DELFI',
-`Phjončhanas olimpisko spēļu hokeja turnīrs būs unikāls ar to, ka nevienā izlasē nespēlēs spēlētāji no Nacionālās hokeja līgas (NHL), tāpēc šī sporta veida lielvalstij Kanādai nācās meklēt labākos pieejamos spēlētājus Eiropā. Kanādas valstsvienība savu sastāvu Phjončahanas spēlēm jau paziņojusi, bet pēdējo sagatavošanos posmu aizvada Rīgā.
+  ],
+  [
+    'Gaidot \'Phjončhanu 2018\': Kanādas olimpiskā hokeja izlase ceļu pēc zelta sāk Latvijā | DELFI',
+    `Phjončhanas olimpisko spēļu hokeja turnīrs būs unikāls ar to, ka nevienā izlasē nespēlēs spēlētāji no Nacionālās hokeja līgas (NHL), tāpēc šī sporta veida lielvalstij Kanādai nācās meklēt labākos pieejamos spēlētājus Eiropā. Kanādas valstsvienība savu sastāvu Phjončahanas spēlēm jau paziņojusi, bet pēdējo sagatavošanos posmu aizvada Rīgā.
 Kanādas izlase pirms olimpiskajām spēlēm arī aizvadīs pārbaudes spēli ar Latvijas valstsvienību. No līdzjutēju puses par šo maču esot ļoti liela interese, tāpēc sagaidāms, ka "Arēnā Rīga" atmosfēra būs lieliska. Kanādas hokejisti savus treniņus aizvada "Inbox.lv" ledus hallē Piņķos, un pēc trešdienas treniņa ģenerālmenedžeris Šons Burks pamatoja, kāpēc viņi trenējas tieši šeit.
 "Rīga ir skaista pilsēta. Mums izlasē ir 13 spēlētāji no Kontinentālās hokeja līgas (KHL) komandām, tāpēc Rīga bija ērta pilsēta tādā ziņā. Šeit ir laba treniņu vieta, mums ir labas attiecības ar Latvijas Hokeja federāciju (LHF) un mēs šeit esam bijuši iepriekš. Šeit vienmēr ir labi apstākļi un labi hokeja fani," Latvijas žurnālistiem teica Burks.
 Kanādas izlasē iekļauts Rīgas "Dinamo" aizsargs Karls Stolerijs, bet uz vietu pretendēja arī uzbrucējs Brendons Makmilans. Tāpat sezonas laikā no "Dinamo" atlaistais vārtsargs Džastins Pīterss brauks uz Phjončhanu.
@@ -43,10 +43,10 @@ Dežardēnam svētdien atkal būs iespēja spēlēt pret sava kolēģa Boba Hār
 "Mums kopā vēl jāpavada laiks, lai saspēlētos. Mēs necenšamies izdomāt kaut kādas jaunas sistēmas, slīpējam spēles pamatelementus, kurus spēlētāji zina. Mēs vēl visi neesam bijuši kopā, tāpēc ir grūti spriest par mūsu stiprajām vai vājajām pusēm. Man patīk mūsu aizsardzības līnija, jo tā var pieturēt ripu. Mēs spēlēsim smagi, neatlaidīgi un ar lielu enerģiju," turpinājumā teica Dežardēns.
 Burks uzsvēra, ka spēlētāji ir ļoti priecīgi pārstāvēt savu valsti, jo viņiem iepriekš tāda iespēja nav bijusi. Kanādas izlases ģenerālmenedžeris arī norādīja, ka nespēj nosaukt vienu komandu, kas būs galvenā medaļu pretendente: "Ir vairākas komandas. Protams, ka Krievijai būs laba komanda, un viņus var uzskatīt par favorītiem. Arī mums būs iespēja uzvarēt. Turnīrs būs līdzīgs." Viņa viedoklim piekrita arī Dežardēns.
 Kanādā vienmēr no izlases sagaida medaļas, un Burks to apzinās. Tāpat ģenerālmenedžeris stāstīja, ka spēlētāji bija ļoti pagodināti, kad viņiem paziņoja par iekļūšanu izlases sastāvā. "Viņiem tas bija emocionāls mirklis, kas mums sniedza gandarījumu," teica Burks.`
-    ],
-    [
-        'Saeimā sākas virzība grozījumiem par pakāpenisku pāreju uz mācībām latviešu valodā | LETA',
-`Saeima ceturtdien nodeva izskatīšanai komisijās likumu grozījumus, kas paredz no 2019.gada 1.septembra vispārējās izglītības iestādēs sākt pakāpenisku pāreju uz mācībām latviešu valodā.
+  ],
+  [
+    'Saeimā sākas virzība grozījumiem par pakāpenisku pāreju uz mācībām latviešu valodā | LETA',
+    `Saeima ceturtdien nodeva izskatīšanai komisijās likumu grozījumus, kas paredz no 2019.gada 1.septembra vispārējās izglītības iestādēs sākt pakāpenisku pāreju uz mācībām latviešu valodā.
 Deputāts Hosams Abu Meri (V) debatēs uzsvēra, ka šis ir valsts pašcieņas un pastāvēšanas jautājums. Viņš skaidroja, ka izmaiņas nepieciešamas, lai nodrošinātu kvalitatīvu izglītību. Tāpat būtiski, lai Latvijas iedzīvotāji nedzīvotu "divās paralēlās pasaulēs", atšķirīgās mediju telpās. "Šeit ir Latvija," sacīja deputāts, akcentējot, ka latviešu valoda "bija, ir un būs vienīgā valsts valoda".
 Savukārt deputāts Igors Pimenovs (S) aicināja neatbalstīt šādas izmaiņas, uzsverot, ka šis ir otrais mazākumtautību mācību latviskošanas vilnis. Pimenovs norādīja uz pieprasījumu pēc izglītības krievu valodā, kā arī uzsvēra, ka vecākiem ir pamatotas tiesības prasīt, lai no viņu samaksātajiem nodokļiem tiktu nodrošinātas apmācības arī mazākumtautību valodās.
 Grozījumus Vispārējās izglītības likumā šodien atbalstīja 66 deputāti, pret balsoja 21 parlamentārietis, bet Juris Viļums (LRA) balsojumā nepiedalījās. Savukārt grozījumus Izglītības likumā atbalstīja 67 deputāti, pret bija 21 deputāts, bet Viļums balsojumā nepiedalījās.
@@ -67,41 +67,43 @@ Pērn tika nolemts, ka jau šajā mācību gadā 12.klases centralizētie eksām
 IZM valsts sekretāra vietniece Gunta Arāja iepriekš atgādināja, ka Latviešu valodas aģentūras pētījums liecina, ka, lai gan mazākumtautību jauniešiem ir latviešu valodas prasmes, daļai jauniešu tās ir tikai pamatprasmes vai vājā līmenī.
 Arāja skaidroja, ka pārmaiņas mācību valodā tiks īstenotas līdztekus jaunā mācību satura ieviešanai, kā arī jau apstiprinātajām izmaiņām valsts pārbaudījumu un centralizēto eksāmenu norises kārtībā.
 Arāja uzsvēra, ka pedagogu kompetences pilnveidei un atbalstam būs pieejami vairāki atbalsta pasākumi. No valsts pamatbudžeta 2018.-2020.gadam būs pieejami aptuveni 3,6 miljoni eiro, lai nodrošinātu atbalstu pedagogiem saistībā ar jaunā vispārējās izglītības satura ieviešanu. Savukārt no Eiropas Savienības fondiem būs pieejami aptuveni 3,299 miljoni eiro aptuveni 8000 pedagogiem, kas strādā mazākumtautību izglītības programmās vai lingvistiski neviendabīgā vidē. Šie līdzekļi būs pieejami valsts valodas prasmes līmeņa diagnostikai, kursiem latviešu valodas prasmes līmeņa paaugstināšanai, valsts valodas prasmes pārbaudēm, metodikas kursiem, citiem mācību pasākumiem, rokasgrāmatām un pedagogu portfolio mācību īstenošanai latviešu valodā, kā arī didaktiskajiem materiāliem mācībām pirmsskolas izglītībā.`
-    ],
+  ],
 
 ];
 
 const NerComponent = ({data}) => {
   let sentences = data.sentences.map((sent, sentIdx) => {
-      let entities = sent.ner || [];
-      let res = [];
-      let currentEntity = null;
-      let currentEntityTokens = [];
-      let nextEntityIdx = 0;
-      sent.tokens.forEach((tok, tokIdx) => {
-          if (currentEntity && currentEntity.end === tokIdx) {
-              res.push(<span key={`ner-${sentIdx}-${tokIdx}`} className={`ner ${currentEntity.label}`} data-entity={currentEntity.label}>{currentEntityTokens}</span>);
-              res.push(' ');
-              currentEntity = null;
-              currentEntityTokens = [];
-          }
-          if (nextEntityIdx < entities.length && entities[nextEntityIdx].start === tokIdx) {
-              currentEntity = entities[nextEntityIdx];
-              nextEntityIdx++;
-          }
-          if (currentEntity) {
-              currentEntityTokens.push(tok.form);
-              currentEntityTokens.push(' ');
-          } else {
-              res.push(tok.form);
-              res.push(' ');
-          }
-      });
-      if (currentEntity) {
-          res.push(<span key={`ner-${sentIdx}-last`} className={`ner ${currentEntity.label}`} data-entity={currentEntity.label}>{currentEntityTokens}</span>);
-          res.push(' ');
+    let entities = sent.ner || [];
+    let res = [];
+    let currentEntity = null;
+    let currentEntityTokens = [];
+    let nextEntityIdx = 0;
+    sent.tokens.forEach((tok, tokIdx) => {
+      if (currentEntity && currentEntity.end === tokIdx) {
+        res.push(<span key={`ner-${sentIdx}-${tokIdx}`} className={`ner ${currentEntity.label}`}
+                       data-entity={currentEntity.label}>{currentEntityTokens}</span>);
+        res.push(' ');
+        currentEntity = null;
+        currentEntityTokens = [];
       }
-      return <div key={sentIdx} className='sentence'>{res}</div>
+      if (nextEntityIdx < entities.length && entities[nextEntityIdx].start === tokIdx) {
+        currentEntity = entities[nextEntityIdx];
+        nextEntityIdx++;
+      }
+      if (currentEntity) {
+        currentEntityTokens.push(tok.form);
+        currentEntityTokens.push(' ');
+      } else {
+        res.push(tok.form);
+        res.push(' ');
+      }
+    });
+    if (currentEntity) {
+      res.push(<span key={`ner-${sentIdx}-last`} className={`ner ${currentEntity.label}`}
+                     data-entity={currentEntity.label}>{currentEntityTokens}</span>);
+      res.push(' ');
+    }
+    return <div key={sentIdx} className='sentence'>{res}</div>
   });
 
   return (
@@ -138,7 +140,8 @@ const Conll = ({data}) => (
             <td>{token.lemma}</td>
             <td>{token.upos}</td>
             <td>{token.tag}</td>
-            <td style={{maxWidth: 100, overflowX: 'scroll', whiteSpace: 'nowrap'}} title={token.features}>{token.ufeats || token.features}</td>
+            <td style={{maxWidth: 100, overflowX: 'scroll', whiteSpace: 'nowrap'}}
+                title={token.features}>{token.ufeats || token.features}</td>
             <td>{token.parent}</td>
             <td>{token.deprel}</td>
           </tr>)),
@@ -169,11 +172,11 @@ const NlpView = () => {
     <div className="demo-container">
       <div style={{marginBottom: 10}}>
         <Select
-            placeholder={'Select a sample text'}
-            style={{width: "100%"}}
-            onChange={v => setText(sampleTexts[v][1])}
+          placeholder={'Select a sample text'}
+          style={{width: "100%"}}
+          onChange={v => setText(sampleTexts[v][1])}
         >
-          {sampleTexts.map((e,i) => <Select.Option key={i}>{e[0]}</Select.Option> )}
+          {sampleTexts.map((e, i) => <Select.Option key={i}>{e[0]}</Select.Option>)}
         </Select>
       </div>
 
@@ -206,8 +209,8 @@ const NlpView = () => {
         <Radio value='json'>JSON</Radio>
       </Radio.Group>
 
-      <br />
-      <br />
+      <br/>
+      <br/>
 
       {loading ?
         <Spin/>
