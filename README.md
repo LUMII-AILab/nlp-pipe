@@ -29,3 +29,7 @@ Please, cite the relevant [publications](https://github.com/LUMII-AILab/nlp-pipe
 Project coordinator: [Normunds Grūzītis](https://www.linkedin.com/in/normundsg)
 
 Key developers: [Artūrs Znotiņš](mailto:arturs.znotins@lumii.lv), Pēteris Paikens, Didzis Goško
+
+## Resources
+- [Documentation](nlppipe/README.md)
+- [Public demo](https://nlp.ailab.lv)

@@ -1,0 +1,6 @@
+models:
+  default:
+    tokenizer: http://morpho/tokenizer
+    morpho: http://morpho/morpho
+    parser: http://parser/parser
+    ner: http://ner/ner

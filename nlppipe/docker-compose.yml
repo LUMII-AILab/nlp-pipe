@@ -1,0 +1,36 @@
+version: '3.4'
+
+x-base:
+  &base
+  restart: unless-stopped
+  logging:
+    options:
+      max-size: "100m"
+      max-file: "10"
+
+services:
+  proxy:
+    << : *base
+    image: nginx:1.21.5
+    ports:
+      - 9500:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+
+  api:
+    << : *base
+    image: nlppipe/lvnlp-api:e261c22d
+    volumes:
+      - ./config.yml:/app/config.yml
+
+  morpho:
+    << : *base
+    image: nlppipe/lvnlp-java:0.6_2.2.3
+
+  parser:
+    << : *base
+    image: nlppipe/allennlp_ud:lv_2.11_m52
+
+  ner:
+    << : *base
+    image: nlppipe/aznlp:0.1-lv_ner_sembank0.4
