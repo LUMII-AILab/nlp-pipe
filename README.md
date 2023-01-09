@@ -2,8 +2,9 @@
 
 ## Publications
 
-- A. Znotins, E. Cirule. [NLP-PIPE: Latvian NLP Tool Pipeline](http://ebooks.iospress.nl/volumearticle/50320). Human Language Technologies - The Baltic Perspective. Frontiers in Artificial Intelligence and Applications, vol. 307, IOS Press, 2018
-- N. Gruzitis, A. Znotins. [Multilayer Corpus and Toolchain for Full-Stack NLU in Latvian](https://office.clarin.eu/v/CE-2018-1292-CLARIN2018_ConferenceProceedings.pdf), Proceedings of the CLARIN Annual Conference 2018
+- Znotiņš, A., Bārzdiņš, G. [LVBERT: Transformer-based Model for Latvian Language Understanding](https://ebooks.iospress.nl/volumearticle/55531). Human Language Technologies - The Baltic Perspective. Frontiers in Artificial Intelligence and Applications, vol. 328, IOS Press, 2020
+- Znotins, A., Cirule, E. [NLP-PIPE: Latvian NLP Tool Pipeline](http://ebooks.iospress.nl/volumearticle/50320). Human Language Technologies - The Baltic Perspective. Frontiers in Artificial Intelligence and Applications, vol. 307, IOS Press, 2018
+- Gruzitis, N., Znotins, A. [Multilayer Corpus and Toolchain for Full-Stack NLU in Latvian](https://office.clarin.eu/v/CE-2018-1292-CLARIN2018_ConferenceProceedings.pdf), Proceedings of the CLARIN Annual Conference 2018
 
 ## Related work
 
