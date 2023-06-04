@@ -19,9 +19,13 @@ services:
 
   api:
     << : *base
-    image: nlppipe/lvnlp-api:e261c22d
-    volumes:
-      - ./config.yml:/app/config.yml
+    image: nlppipe/lvnlp-api:aa6d41b8
+    environment:
+      TIMEOUT: 120
+      tools.tokenizer: http://morpho/tokenizer
+      tools.morpho: http://morpho/morpho
+      tools.parser: http://parser/parser
+      tools.ner: http://ner/ner
 
   morpho:
     << : *base
